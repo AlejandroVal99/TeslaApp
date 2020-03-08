@@ -1,7 +1,8 @@
 package view;
 
-import processing.core.PApplet;
+import controller.HistoryOrderController;
 
-public class HistoryOrderView extends PApplet {
+public class HistoryOrderView {
 
+	private HistoryOrderController historyController;
 }

@@ -1,7 +1,11 @@
 package view;
 
-import processing.core.PApplet;
+import controller.CompareController;
 
-public class CompareView extends PApplet {
+public class CompareView{
+	
+	private CompareController compareController;
+	
+	
 
 }
