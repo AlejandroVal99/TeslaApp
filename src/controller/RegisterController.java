@@ -11,6 +11,7 @@ public class RegisterController {
 	public RegisterController(PApplet app) {
 
 		this.app = app;
+		teslaapp = new TeslaApp(app);
 		// TODO Auto-generated constructor stub
 	}
 

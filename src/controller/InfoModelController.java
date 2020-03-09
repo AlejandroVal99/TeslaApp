@@ -11,6 +11,7 @@ public class InfoModelController {
 	public InfoModelController(PApplet app) {
 		
 		this.app = app;
+		teslaapp = new TeslaApp(app);
 		// TODO Auto-generated constructor stub
 	}
 

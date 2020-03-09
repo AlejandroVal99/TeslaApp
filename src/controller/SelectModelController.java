@@ -12,6 +12,7 @@ public class SelectModelController {
 	public SelectModelController(PApplet app) {
 		
 		this.app = app;
+		teslaapp = new TeslaApp(app);
 		// TODO Auto-generated constructor stub
 	}
 

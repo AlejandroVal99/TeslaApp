@@ -45,38 +45,58 @@ public class MainView extends PApplet {
 	}
 
 	public void draw() {
+		
 
 		switch (screen) {
 
 		case 1:// splashScreen
+			
+			splashScreenView.drawScreen();
 
 			break;
 		case 2:// Log in screen
+			
+			loginView.drawScreen();
 
 			break;
 		case 3:// sign in o register screen
+			
+			registerView.drawScreen();
 
 			break;
 		case 4:// Select Model screen
-
+			
+			selectModelView.drawScreen();
 			break;
 		case 5:// Info Model Screen
-
+			
+			infoModelView.drawScreen();
+			
 			break;
 		case 6:// Compare menu screen
+			
+			compareMenuView.drawScreen();
 
 			break;
 		case 7:// Compare Screen
-
+			compareView.drawScreen();
+			
 			break;
 		case 8:// Info delivery Screen
-
+			deliveryView.drawScreen();
+			
 			break;
 		case 9:// historico Screen
+			historyOrderView.drawScreen();
+			
 			break;
-		case 10:// Thanks Screen
+		case 10://Payment Screen
+			paymentView.drawScreen();
+			
 			break;
-		case 11:// Payment Screen
+		case 11://Thanks Screen
+			thanksView.drawScreen();
+			
 			break;
 
 		}

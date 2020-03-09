@@ -11,6 +11,7 @@ public class LoginController {
 	public LoginController(PApplet app) {
 		
 		this.app = app;
+		teslaapp = new TeslaApp(app);
 		// TODO Auto-generated constructor stub
 	}
 

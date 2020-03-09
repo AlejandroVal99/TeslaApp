@@ -11,6 +11,7 @@ public class CompareController {
 	public CompareController(PApplet app) {
 		
 		this.app = app;
+		teslaapp = new TeslaApp(app);
 		// TODO Auto-generated constructor stub
 	}
 	

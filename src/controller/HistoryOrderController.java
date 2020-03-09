@@ -12,6 +12,7 @@ public class HistoryOrderController {
 	public HistoryOrderController(PApplet app) {
 		
 		this.app = app;
+		teslaapp = new TeslaApp(app);
 		// TODO Auto-generated constructor stub
 	}
 

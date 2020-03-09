@@ -10,6 +10,7 @@ public class PaymentController {
 	public PaymentController(PApplet app) {
 
 		this.app = app;
+		teslaapp = new TeslaApp(app);
 		// TODO Auto-generated constructor stub
 	}
 
