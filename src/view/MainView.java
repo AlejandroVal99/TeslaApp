@@ -15,6 +15,7 @@ public class MainView extends PApplet {
 	private DeliveryInfoView deliveryView;
 	private PaymentView paymentView;
 	private ThanksView thanksView;
+	private HistoryOrderView historyOrderView;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,50 +27,101 @@ public class MainView extends PApplet {
 	}
 
 	public void setup() {
+		
+		
+		splashScreenView = new SplashScreenView (this);
+		loginView = new LoginView (this);
+		registerView = new RegisterView  (this);
+		selectModelView = new SelectModelView (this);
+		infoModelView = new InfoModelView(this);
+		compareMenuView = new CompareMenuView(this);
+		compareView = new CompareView(this);
+		paymentView = new PaymentView(this);
+		deliveryView = new DeliveryInfoView(this);
+		thanksView = new ThanksView(this);
+		historyOrderView = new HistoryOrderView(this);
+		
 
 	}
 
 	public void draw() {
 
 		switch (screen) {
-		
-		case 1://splashScreen
-			
+
+		case 1:// splashScreen
+
 			break;
-		case 2://Log in screen
-		
+		case 2:// Log in screen
+
 			break;
-		case 3://sign in o register screen
-			
+		case 3:// sign in o register screen
+
 			break;
-		case 4://Select Model screen
-			
+		case 4:// Select Model screen
+
 			break;
-		case 5://Info Model Screen
-			
+		case 5:// Info Model Screen
+
 			break;
-		case 6://Compare menu screen 
-			
+		case 6:// Compare menu screen
+
 			break;
-		case 7://Compare Screen
-			
+		case 7:// Compare Screen
+
 			break;
-		case 8://Info delivery Screen
-		
+		case 8:// Info delivery Screen
+
 			break;
-		case 9://historico Screen
+		case 9:// historico Screen
 			break;
-		case 10://Thanks Screen
+		case 10:// Thanks Screen
 			break;
-		case 11://Payment Screen
+		case 11:// Payment Screen
 			break;
 
 		}
 
 	}
 
-	public void mousePressed(){
-		
+	public void mousePressed() {
+
+		switch (screen) {
+
+		case 1:// splashScreen
+
+			break;
+		case 2:// Log in screen
+
+			break;
+		case 3:// sign in o register screen
+
+			break;
+		case 4:// Select Model screen
+
+			break;
+		case 5:// Info Model Screen
+
+			break;
+		case 6:// Compare menu screen
+
+			break;
+		case 7:// Compare Screen
+
+			break;
+		case 8:// Info delivery Screen
+
+			break;
+		case 9:// historico Screen
+
+			break;
+		case 10:// Thanks Screen
+
+			break;
+		case 11:// Payment Screen
+
+			break;
+
+		}
 	}
 
 }
