@@ -16,4 +16,26 @@ public class SelectModelController {
 		// TODO Auto-generated constructor stub
 	}
 
+
+	public void pintarModelX() {
+		
+		teslaapp.mostrarModelXSelec();
+		
+	}
+
+
+	public void pintarModelS() {
+		
+		teslaapp.mostrarModelSSelec();
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void pintarModel3() {
+		teslaapp.mostrarModel3Selec();
+		// TODO Auto-generated method stub
+		
+	}
+
 }

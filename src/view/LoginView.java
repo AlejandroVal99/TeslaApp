@@ -53,7 +53,8 @@ public class LoginView {
 
 			username = cp5.get(Textfield.class, "username").getText();
 			password = cp5.get(Textfield.class, "password").getText();
-			System.out.println(username);
+			System.out.println(username+" "+password);
+			
 			if (loginController.logInVerifi(username, password)) {
 				
 				screen = 4;

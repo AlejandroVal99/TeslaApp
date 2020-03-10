@@ -15,7 +15,7 @@ public class RegisterController {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void getInfoForm(String username, String password, String confirmPassword, String email) {
+	public void getInfoForm(String username, String password, String email) {
 		teslaapp.registerUser(username, password, email);
 		
 	}

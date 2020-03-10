@@ -17,7 +17,7 @@ public class User {
 	private TarjetaCredito tarjetaCredito;
 	private ArrayList<Historico> historicos;
 	
-	public User(String username, String email, String password) {
+	public User(String username, String password, String email) {
 		
 		this.username = username;
 		this.email = email;

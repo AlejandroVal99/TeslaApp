@@ -26,9 +26,14 @@ public abstract class Automobile {
 		this.nivelConsumo = nivelConsumo;
 		this.app = app;
 		this.contador = 0; 
+		animacion = new PImage[26];
 		
 	}
-	public void vistaModelo(int posx, int posy) {
+	public void drawModel() {
+		
+	}
+
+	public void vistaModelo(int posX, int posY) {
 		
 	}
 	

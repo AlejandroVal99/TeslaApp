@@ -18,9 +18,17 @@ public class TeslaApp {
 		this.app = app;
 		modelosTesla = new Automobile[3];
 		modelosCompare = new Automobile[3];
-		
-		modelosTesla[0] = new Model3("Model 3", 52690, 145, 3,"low", app);
-		
+
+		// Arreglo de vehiculos tesla
+
+		modelosTesla[0] = new Model3("MODEL 3", 52690, 145, 3.2, "low", app);
+		modelosTesla[1] = new ModelS("MODEL S", 99690, 163, 2.7, "low", app);
+		modelosTesla[2] = new ModelX("MODEL X", 94490, 163, 2.4, "low", app);
+
+		// Arreglo de vehiculos a Comparar
+		modelosCompare[0] = new BMWSeries3("BMWSeries3", 52690, 139, 8.1, "medium", app);
+		modelosCompare[1] = new PeugeotE208("PeugeotE208", 99690, 184, 5.6, "high", app);
+		modelosCompare[2] = new AudiEtron55("AuidEtron55", 94490, 134, 5.7, "low", app);
 
 	}
 
@@ -39,15 +47,16 @@ public class TeslaApp {
 
 	public boolean logInVerification(String username, String password) {
 
+		System.out.println(users.get(0).getUsername()+" "+(users.get(0).getPassword()));
 		for (int i = 0; i < users.size(); i++) {
-			if (users.get(i).getUsername().equals(username) && (users.get(i).getPassword().equals(password))) {
+			if (username.equals(users.get(i).getUsername()) && (password.equals(users.get(i).getPassword()))){
 				posUserActive = i;
 				users.get(i).setActive(true);
 
 				return true;
 			}
-		}
-		return false;
+		}return false;
+		
 	}
 
 	public void tarjetaPago(String franquicia, String pam, String cvc, String fecha) {
@@ -70,12 +79,31 @@ public class TeslaApp {
 
 	}
 
-	public void  crearCompra() {
-		
-		if(users.get(posUserActive).isActive()) {
-			users.get(posUserActive).guardarCompra(users.get(posUserActive).getAutomovil(),users.get(posUserActive).getTarjetaCredito(),users.get(posUserActive).getAddress());
+	public void crearCompra() {
+
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).guardarCompra(users.get(posUserActive).getAutomovil(),
+					users.get(posUserActive).getTarjetaCredito(), users.get(posUserActive).getAddress());
 		}
-		
+
+	}
+
+	public void mostrarModel3Selec() {
+
+		modelosTesla[0].drawModel();
+
+	}
+
+	public void mostrarModelXSelec() {
+
+		modelosTesla[2].drawModel();
+
+	}
+
+	public void mostrarModelSSelec() {
+
+		modelosTesla[1].drawModel();
+
 	}
 
 }

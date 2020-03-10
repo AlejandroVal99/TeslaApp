@@ -79,7 +79,7 @@ public class RegisterView {
 			// Esto valida que un string sea igual a otro
 			if (password.equals(confirmPassword)) {
 				screen = 2;
-				registerController.getInfoForm(username, password, confirmPassword, email);
+				registerController.getInfoForm(username, password, email);
 				
 			}
 		}

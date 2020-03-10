@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 public class MainView extends PApplet {
 
-	private int screen = 1;
+	private int screen = 3;
 	private SplashScreenView splashScreenView;
 	private LoginView loginView;
 	private RegisterView registerView;
@@ -119,7 +119,9 @@ public class MainView extends PApplet {
 			
 			loginView.loginVerification();
 			loginView.cambioScreen();
+			
 			setScreen(loginView.getScreen());
+			System.out.println(loginView.getScreen());
 
 			break;
 		case 3:// sign in o register screen
@@ -135,7 +137,8 @@ public class MainView extends PApplet {
 			break;
 			
 		case 4:// Select Model screen
-
+			selectModelView.escogerCarro();
+			setScreen(selectModelView.getScreen());
 			
 			break;
 			
