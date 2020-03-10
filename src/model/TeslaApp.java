@@ -47,13 +47,25 @@ public class TeslaApp {
 
 	public void tarjetaPago(String franquicia, String pam, String cvc, String fecha) {
 
-		//if (users.get(posUserActive).isActive()) {
+		if (users.get(posUserActive).isActive()) {
 		System.out.println("tengo tarjeta");
 			users.get(posUserActive).nuevaTarjeta(franquicia, pam, cvc, fecha);
 
-		//}
+		}
 
 	}
+
+	public void deliveryInformation(String country, String state, String address) {
+		
+		if (users.get(posUserActive).isActive()) {
+			System.out.println("informacion de pedido check");
+				users.get(posUserActive).deliveryInfo(country, address, state);
+
+			}
+		
+	}
+	
+	
 
 	
 }

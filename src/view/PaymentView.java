@@ -66,7 +66,7 @@ public class PaymentView {
 
 	public void nuevaCreditCard() {
 		
-		if (app.mouseX > 148 && app.mouseX < 266 && app.mouseY > 640 && app.mouseY < 668) {
+		if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
 
 			franquicia = cp5.get(Textfield.class, "franquicia").getText();
 			pam = cp5.get(Textfield.class, "pam").getText();

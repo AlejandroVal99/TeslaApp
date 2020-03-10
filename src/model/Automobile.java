@@ -13,6 +13,9 @@ public abstract class Automobile {
 	protected int velMax;
 	protected PImage selectModel;
 	protected PApplet app;
+	protected PImage[] animacion;
+	protected int contador = 0;
+	
 	
 	public Automobile(String modelo, int precio, int velMax, float timeAceleracion, String nivelConsumo, PApplet app) {
 		
@@ -22,7 +25,20 @@ public abstract class Automobile {
 		this.timeAceleracion = timeAceleracion;
 		this.nivelConsumo = nivelConsumo;
 		this.app = app;
+		this.contador = 0; 
 		
+	}
+	public void vistaModelo(int posx, int posy) {
+		
+	}
+	
+	public void animacionModelo(int posy) {
+		app.image(animacion[contador],0,posy);
+		if(contador < animacion.length) {
+		if(app.frameCount % 2 == 0) {
+			contador++;
+		}
+		}
 	}
 	
 	public String getModelo() {

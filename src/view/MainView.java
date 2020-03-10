@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 public class MainView extends PApplet {
 
-	private int screen = 10;
+	private int screen = 1;
 	private SplashScreenView splashScreenView;
 	private LoginView loginView;
 	private RegisterView registerView;
@@ -110,6 +110,9 @@ public class MainView extends PApplet {
 		switch (screen) {
 
 		case 1:// splashScreen
+			splashScreenView.cambioScreen();
+			setScreen(splashScreenView.getScreen());
+			
 
 			break;
 		case 2:// Log in screen
@@ -130,29 +133,43 @@ public class MainView extends PApplet {
 				//}
 
 			break;
+			
 		case 4:// Select Model screen
 
+			
 			break;
+			
 		case 5:// Info Model Screen
 
+			
 			break;
+			
 		case 6:// Compare menu screen
 
+			
 			break;
+			
 		case 7:// Compare Screen
 
 			break;
+			
 		case 8:// Info delivery Screen
-
+			deliveryView.getinfoDelivery();
+			setScreen(deliveryView.getScreen());
 			break;
+			
 		case 9:// historico Screen
 
 			break;
+			
 		case 10:// Payment Screen
 			paymentView.nuevaCreditCard();
 			setScreen(paymentView.getScreen());
 			break;
+			
 		case 11:// Thaks Screen
+			thanksView.cambioScreen();
+			setScreen(thanksView.getScreen());
 
 			break;
 
@@ -162,6 +179,7 @@ public class MainView extends PApplet {
 		registerView.mostrarInputs(screen);
 		loginView.mostrarInputs(screen);
 		paymentView.mostrarInputs(screen);
+		deliveryView.mostrarInputs(screen);
 	}
 
 	public int getScreen() {
