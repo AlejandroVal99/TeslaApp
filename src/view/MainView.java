@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 public class MainView extends PApplet {
 
-	private int screen = 1;
+	private int screen = 3;
 	private SplashScreenView splashScreenView;
 	private LoginView loginView;
 	private RegisterView registerView;
@@ -104,6 +104,8 @@ public class MainView extends PApplet {
 	}
 
 	public void mousePressed() {
+		
+		System.out.println("x "+mouseX +"y "+mouseY);
 
 		switch (screen) {
 
