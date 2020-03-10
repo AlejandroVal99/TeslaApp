@@ -15,4 +15,12 @@ public class InfoModelController {
 		// TODO Auto-generated constructor stub
 	}
 
+
+	public void pintarInfo() {
+		
+		teslaapp.mostrarModel3Selec();
+		// TODO Auto-generated method stub
+		
+	}
+
 }

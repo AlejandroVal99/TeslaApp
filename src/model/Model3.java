@@ -39,5 +39,6 @@ public class Model3 extends Automobile {
 		app.image(modelPic, posX, posY);
 	}
 	
+	
 
 }

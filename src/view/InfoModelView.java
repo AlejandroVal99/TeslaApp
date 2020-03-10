@@ -21,11 +21,15 @@ public class InfoModelView {
 	}
 
 	public void drawScreen() {
-		
+		 
 		app.image(bInfoModel, 0, 0); 
+		
 		
 		// TODO Auto-generated method stub
 		
+	}
+	public void drawInfoModel() {
+		infoModelController.pintarInfo();
 	}
 	
 

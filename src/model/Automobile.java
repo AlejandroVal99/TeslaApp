@@ -2,6 +2,7 @@ package model;
 
 import processing.core.PImage;
 import processing.core.PApplet;
+import processing.core.PFont;
 
 public abstract class Automobile {
 	
@@ -15,6 +16,7 @@ public abstract class Automobile {
 	protected PApplet app;
 	protected PImage[] animacion;
 	protected int contador = 0;
+	protected PFont raleway;
 	
 	
 	public Automobile(String modelo, int precio, int velMax, double timeAceleracion, String nivelConsumo, PApplet app) {
@@ -27,6 +29,7 @@ public abstract class Automobile {
 		this.app = app;
 		this.contador = 0; 
 		animacion = new PImage[26];
+		raleway = app.createFont("Tipografia/Raleway-Medium.ttf", 70);
 		
 	}
 	public void drawModel() {
@@ -34,6 +37,17 @@ public abstract class Automobile {
 	}
 
 	public void vistaModelo(int posX, int posY) {
+		
+	}
+	
+	
+	public void mostrarInfoModel() {
+		app.textFont(raleway, 41);
+		app.text(modelo, 110, 150);//modelo
+		app.textFont(raleway, 41);
+		app.text("$"+precio, 110, 225);//precio
+		app.text(""+timeAceleracion, 20, 328);//tiempoAceleration
+		app.text(velMax, 160, 328);//velocidad
 		
 	}
 	

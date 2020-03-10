@@ -107,21 +107,21 @@ public class TeslaApp {
 	}
 
 	public void mostrarModel3Selec() {
-
 		modelosTesla[0].drawModel();
-
 	}
 
 	public void mostrarModelXSelec() {
-
 		modelosTesla[2].drawModel();
-
 	}
 
 	public void mostrarModelSSelec() {
-
 		modelosTesla[1].drawModel();
-
+	}
+	public void mostrarInfoModel() {
+		
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).getAutomovil().mostrarInfoModel();;
+		}
 	}
 
 }
