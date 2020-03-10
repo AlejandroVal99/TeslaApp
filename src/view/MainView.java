@@ -21,7 +21,7 @@ public class MainView extends PApplet {
 		// TODO Auto-generated method stub
 		PApplet.main("view.MainView");
 	}
-
+ 
 	public void settings() {
 		size(414, 896);
 	}

@@ -87,6 +87,21 @@ public class TeslaApp {
 		}
 
 	}
+	public void comprarModel3() {
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).setAutomovil(modelosTesla[0]);;
+		}
+	}
+	public void comprarModelS() {
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).setAutomovil(modelosTesla[1]);;
+		}
+	}
+	public void comprarModelX() {
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).setAutomovil(modelosTesla[2]);;
+		}
+	}
 
 	public void mostrarModel3Selec() {
 

@@ -26,14 +26,14 @@ public class SelectModelView {
 		switch (model) {
 
 		case 1:
-			
+
 			selectModelController.pintarModel3();
 			break;
 
 		case 2:
 			selectModelController.pintarModelX();
 			break;
-		case 3:			
+		case 3:
 			selectModelController.pintarModelS();
 			break;
 		}
@@ -41,38 +41,52 @@ public class SelectModelView {
 		// TODO Auto-generated method stub
 
 	}
-	
+
 	public void escogerCarro() {
-		
+
 		switch (model) {
 
 		case 1:
 			if (app.mouseX > 350 && app.mouseX < 381 && app.mouseY > 159 && app.mouseY < 188) {
 				model = 2;
-				
-			}
 
+			}
+			//asignar auto
+			if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
+				
+				screen = 10;
+
+			}
+ 
 			break;
 
 		case 2:
-			
+
 			if (app.mouseX > 350 && app.mouseX < 381 && app.mouseY > 159 && app.mouseY < 188) {
-				model = 3;	
+				model = 3;
 			}
 			if (app.mouseX > 34 && app.mouseX < 60 && app.mouseY > 159 && app.mouseY < 189) {
-				model = 1;	
+				model = 1;
+			}
+			//asignar auto
+			if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
+				screen = 10;
 			}
 
 			break;
 		case 3:
-			
+
 			if (app.mouseX > 34 && app.mouseX < 60 && app.mouseY > 159 && app.mouseY < 189) {
-				model = 2;	
+				model = 2;
 			}
-			
+			//asignar auto
+			if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
+				screen = 10;
+			}
+
 			break;
 		}
-		
+
 	}
 
 	public int getScreen() {

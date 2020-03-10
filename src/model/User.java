@@ -30,7 +30,7 @@ public class User {
 		this.address = address;
 		this.country = country;
 		this.state = state;
-	}
+	} 
 	
 	public void nuevaTarjeta (String franquicia, String pam, String cvc, String fecha) {
 		tarjetaCredito = new TarjetaCredito(franquicia, pam, cvc, fecha);
