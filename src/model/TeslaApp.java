@@ -16,6 +16,11 @@ public class TeslaApp {
 
 		users = new ArrayList<User>();
 		this.app = app;
+		modelosTesla = new Automobile[3];
+		modelosCompare = new Automobile[3];
+		
+		modelosTesla[0] = new Model3("Model 3", 52690, 145, 3,"low", app);
+		
 
 	}
 
@@ -48,7 +53,7 @@ public class TeslaApp {
 	public void tarjetaPago(String franquicia, String pam, String cvc, String fecha) {
 
 		if (users.get(posUserActive).isActive()) {
-		System.out.println("tengo tarjeta");
+			System.out.println("tengo tarjeta");
 			users.get(posUserActive).nuevaTarjeta(franquicia, pam, cvc, fecha);
 
 		}
@@ -56,16 +61,21 @@ public class TeslaApp {
 	}
 
 	public void deliveryInformation(String country, String state, String address) {
-		
+
 		if (users.get(posUserActive).isActive()) {
 			System.out.println("informacion de pedido check");
-				users.get(posUserActive).deliveryInfo(country, address, state);
+			users.get(posUserActive).deliveryInfo(country, address, state);
 
-			}
+		}
+
+	}
+
+	public void  crearCompra() {
+		
+		if(users.get(posUserActive).isActive()) {
+			users.get(posUserActive).guardarCompra(users.get(posUserActive).getAutomovil(),users.get(posUserActive).getTarjetaCredito(),users.get(posUserActive).getAddress());
+		}
 		
 	}
-	
-	
 
-	
 }

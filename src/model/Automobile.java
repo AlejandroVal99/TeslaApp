@@ -7,7 +7,7 @@ public abstract class Automobile {
 	
 	protected String modelo;
 	protected int precio;
-	protected float timeAceleracion;
+	protected double timeAceleracion;
 	protected String nivelConsumo;
 	protected PImage foto;
 	protected int velMax;
@@ -17,7 +17,7 @@ public abstract class Automobile {
 	protected int contador = 0;
 	
 	
-	public Automobile(String modelo, int precio, int velMax, float timeAceleracion, String nivelConsumo, PApplet app) {
+	public Automobile(String modelo, int precio, int velMax, double timeAceleracion, String nivelConsumo, PApplet app) {
 		
 		this.modelo = modelo;
 		this.precio = precio;
@@ -57,11 +57,11 @@ public abstract class Automobile {
 		this.precio = precio;
 	}
 
-	public float getTimeAceleracion() {
+	public double getTimeAceleracion() {
 		return timeAceleracion;
 	}
 
-	public void setTimeAceleracion(float timeAceleracion) {
+	public void setTimeAceleracion(double timeAceleracion) {
 		this.timeAceleracion = timeAceleracion;
 	}
 

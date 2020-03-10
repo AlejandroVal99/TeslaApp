@@ -7,7 +7,7 @@ public class ModelX extends Automobile{
 	
 	private PImage selectModel;
 	
-	public ModelX(String modelo, int precio, int velMax, float timeAcelracion, String nivelConsumo,
+	public ModelX(String modelo, int precio, int velMax, double timeAcelracion, String nivelConsumo,
 				PApplet app) {
 			super(modelo, precio, velMax, timeAcelracion, nivelConsumo, app);
 
