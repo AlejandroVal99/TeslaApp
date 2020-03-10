@@ -30,7 +30,7 @@ public class DeliveryInfoView {
 		cp5 = new ControlP5(app);
 		inputs = new String[3];
 
-		inputs[0] = "country"; 
+		inputs[0] = "country";  
 		inputs[1] = "state";
 		inputs[2] = "address";
 

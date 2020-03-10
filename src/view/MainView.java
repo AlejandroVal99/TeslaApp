@@ -82,6 +82,7 @@ public class MainView extends PApplet {
 			break;
 		case 7:// Compare Screen
 			compareView.drawScreen();
+			compareView.animacionCompare(480);
 			
 			break;
 		case 8:// Info delivery Screen
@@ -98,6 +99,7 @@ public class MainView extends PApplet {
 			break;
 		case 11://Thanks Screen
 			thanksView.drawScreen();
+			thanksView.drawModelo(0,200);
 			
 			break;
 
@@ -135,28 +137,31 @@ public class MainView extends PApplet {
 			//if (mouseX > 148 && mouseX < 266 && mouseY > 640 && mouseY < 668) {
 				//screen = 2;
 				//}
-
 			break;
 			
 		case 4:// Select Model screen
 			selectModelView.escogerCarro();
 			setScreen(selectModelView.getScreen());
 			
+			
 			break;
 			
 		case 5:// Info Model Screen
 			infoModelView.cambioScreen();
 			setScreen(infoModelView.getScreen());
-			
 			break;
 			
 		case 6:// Compare menu screen
+			compareMenuView.cambioScreen();
+			setScreen(compareMenuView.getScreen());
 			
 
 			
 			break;
 			
 		case 7:// Compare Screen
+			compareView.cambioScreen();
+			setScreen(compareView.getScreen());
 
 			break;
 			
@@ -166,7 +171,17 @@ public class MainView extends PApplet {
 			break;
 			
 		case 9:// historico Screen
-
+			historyOrderView.cambioScreen();
+			setScreen(historyOrderView.getScreen());
+			splashScreenView.setScreen(1);
+			loginView.setScreen(2);
+			registerView.setScreen(3);
+			selectModelView.setScreen(4);
+			infoModelView.setScreen(5);
+			compareMenuView.setScreen(6);
+			compareView.setScreen(7);
+			deliveryView.setScreen(8);
+			paymentView.setScreen(10);
 			break;
 			
 		case 10:// Payment Screen
@@ -177,6 +192,17 @@ public class MainView extends PApplet {
 		case 11:// Thaks Screen
 			thanksView.cambioScreen();
 			setScreen(thanksView.getScreen());
+			historyOrderView.cambioScreen();
+			setScreen(historyOrderView.getScreen());
+			splashScreenView.setScreen(1);
+			loginView.setScreen(2);
+			registerView.setScreen(3);
+			selectModelView.setScreen(4);
+			infoModelView.setScreen(5);
+			compareMenuView.setScreen(6);
+			compareView.setScreen(7);
+			deliveryView.setScreen(8);
+			paymentView.setScreen(10);
 
 			break;
 

@@ -46,7 +46,7 @@ public abstract class Automobile {
 	public void mostrarInfoModel() {
 		app.textFont(raleway, 41);
 		app.text(modelo, 264, 190);//modelo
-		app.textFont(raleway, 41);
+		app.textFont(raleway, 41); 
 		app.text("$"+precio, 135, 250);//precio
 		app.text(""+timeAceleracion, 40, 350);//tiempoAceleration
 		app.text(velMax, 175, 350);//velocidad

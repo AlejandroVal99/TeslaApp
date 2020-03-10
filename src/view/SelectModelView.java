@@ -26,7 +26,7 @@ public class SelectModelView {
 		switch (model) {
  
 		case 1:
-
+ 
 			selectModelController.pintarModel3();
 			break;
 

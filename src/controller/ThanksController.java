@@ -15,4 +15,10 @@ public class ThanksController {
 		// TODO Auto-generated constructor stub
 	}
 
+	public void pintarModelo(int posX, int posY) {
+	
+		teslaapp.mostrarModelo(posX, posY);
+		
+	}
+
 }

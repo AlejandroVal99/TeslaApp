@@ -15,6 +15,14 @@ public class User {
 	private Automobile comAutomovil;
 	private Automobile automovil;
 	
+	public Automobile getComAutomovil() {
+		return comAutomovil;
+	}
+
+	public void setComAutomovil(Automobile comAutomovil) {
+		this.comAutomovil = comAutomovil;
+	}
+
 	private TarjetaCredito tarjetaCredito;
 	private ArrayList<Historico> historicos;
 	

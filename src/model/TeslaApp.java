@@ -15,17 +15,17 @@ public class TeslaApp {
 	public TeslaApp(PApplet app) {
 
 		users = new ArrayList<User>();
-		this.app = app; 
+		this.app = app;
 		modelosTesla = new Automobile[3];
 		modelosCompare = new Automobile[3];
 
 		// Arreglo de vehiculos tesla
-		
-		//modelo 3
+
+		// modelo 3
 		modelosTesla[0] = new Model3(" 3", 52690, 145, 3.2, "low", app);
-		//modelo s
+		// modelo s
 		modelosTesla[1] = new ModelS(" S", 99690, 163, 2.7, "low", app);
-		//modelo x
+		// modelo x
 		modelosTesla[2] = new ModelX(" X", 94490, 163, 2.4, "low", app);
 
 		// Arreglo de vehiculos a Comparar
@@ -50,16 +50,17 @@ public class TeslaApp {
 
 	public boolean logInVerification(String username, String password) {
 
-		System.out.println(users.get(0).getUsername()+" "+(users.get(0).getPassword()));
+		System.out.println(users.get(0).getUsername() + " " + (users.get(0).getPassword()));
 		for (int i = 0; i < users.size(); i++) {
-			if (username.equals(users.get(i).getUsername()) && (password.equals(users.get(i).getPassword()))){
+			if (username.equals(users.get(i).getUsername()) && (password.equals(users.get(i).getPassword()))) {
 				posUserActive = i;
 				users.get(i).setActive(true);
 
 				return true;
 			}
-		}return false;
-		
+		}
+		return false;
+
 	}
 
 	public void tarjetaPago(String franquicia, String pam, String cvc, String fecha) {
@@ -90,19 +91,25 @@ public class TeslaApp {
 		}
 
 	}
+
 	public void comprarModel3() {
 		if (users.get(posUserActive).isActive()) {
-			users.get(posUserActive).setAutomovil(modelosTesla[0]);;
+			users.get(posUserActive).setAutomovil(modelosTesla[0]);
+			;
 		}
 	}
+
 	public void comprarModelS() {
 		if (users.get(posUserActive).isActive()) {
-			users.get(posUserActive).setAutomovil(modelosTesla[1]);;
+			users.get(posUserActive).setAutomovil(modelosTesla[1]);
+			;
 		}
 	}
+
 	public void comprarModelX() {
 		if (users.get(posUserActive).isActive()) {
-			users.get(posUserActive).setAutomovil(modelosTesla[2]);;
+			users.get(posUserActive).setAutomovil(modelosTesla[2]);
+			;
 		}
 	}
 
@@ -117,16 +124,60 @@ public class TeslaApp {
 	public void mostrarModelSSelec() {
 		modelosTesla[1].drawModel();
 	}
+
 	public void mostrarInfoModel() {
-		
+
 		if (users.get(posUserActive).isActive()) {
-			users.get(posUserActive).getAutomovil().mostrarInfoModel();;
+			users.get(posUserActive).getAutomovil().mostrarInfoModel();
+			;
 		}
 	}
-	public void mostrarModelo(int posX,int posY) {
+
+	public void mostrarModelo(int posX, int posY) {
 		if (users.get(posUserActive).isActive()) {
-			users.get(posUserActive).getAutomovil().vistaModelo(posX,posY);;
+			users.get(posUserActive).getAutomovil().vistaModelo(posX, posY);
+			;
 		}
+	}
+
+	public void comparoPeugeot() {
+
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).setComAutomovil(modelosCompare[1]);
+		}
+
+	}
+
+	public void comparoBMW() {
+
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).setComAutomovil(modelosCompare[0]);
+		}
+
+	}
+
+	public void comparoAudiE() {
+
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).setComAutomovil(modelosCompare[2]);
+		}
+
+	}
+
+	public void animacionTeslaCar(int posY) {
+		
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).getAutomovil().animacionModelo(posY);;
+		}
+		
+	}
+
+	public void animacionCompareCar(int posY) {
+		
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).getComAutomovil().animacionModelo(posY);;
+		}
+		
 	}
 
 }
