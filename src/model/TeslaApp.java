@@ -15,18 +15,18 @@ public class TeslaApp {
 	public TeslaApp(PApplet app) {
 
 		users = new ArrayList<User>();
-		this.app = app;
+		this.app = app; 
 		modelosTesla = new Automobile[3];
 		modelosCompare = new Automobile[3];
 
 		// Arreglo de vehiculos tesla
 		
 		//modelo 3
-		modelosTesla[0] = new Model3("MODEL 3", 52690, 145, 3.2, "low", app);
+		modelosTesla[0] = new Model3(" 3", 52690, 145, 3.2, "low", app);
 		//modelo s
-		modelosTesla[1] = new ModelS("MODEL S", 99690, 163, 2.7, "low", app);
+		modelosTesla[1] = new ModelS(" S", 99690, 163, 2.7, "low", app);
 		//modelo x
-		modelosTesla[2] = new ModelX("MODEL X", 94490, 163, 2.4, "low", app);
+		modelosTesla[2] = new ModelX(" X", 94490, 163, 2.4, "low", app);
 
 		// Arreglo de vehiculos a Comparar
 		modelosCompare[0] = new BMWSeries3("BMWSeries3", 52690, 139, 8.1, "medium", app);
@@ -121,6 +121,11 @@ public class TeslaApp {
 		
 		if (users.get(posUserActive).isActive()) {
 			users.get(posUserActive).getAutomovil().mostrarInfoModel();;
+		}
+	}
+	public void mostrarModelo(int posX,int posY) {
+		if (users.get(posUserActive).isActive()) {
+			users.get(posUserActive).getAutomovil().vistaModelo(posX,posY);;
 		}
 	}
 

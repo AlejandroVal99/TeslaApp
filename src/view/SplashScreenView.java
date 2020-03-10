@@ -12,7 +12,7 @@ public class SplashScreenView {
 	public SplashScreenView(PApplet app) {
 
 		bSplashScreen = app.loadImage("Imagenes/Backgrounds/SplashScreen.png");
-		this.app = app;
+		this.app = app; 
 
 	}
 

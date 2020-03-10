@@ -12,7 +12,7 @@ public class Model3 extends Automobile {
 		super(modelo, precio, velMax, timeAcelracion, nivelConsumo, app);
 		
 		selectModel = app.loadImage("../Imagenes/SelectionModel/Model3Select.png");
-		modelPic= app.loadImage("../Imagenes/SelectionModel/Model3Select.png");
+		modelPic= app.loadImage("../Imagenes/Modelos/Model3.png");
 		
 		/*
 		  animacion = new PImage[26]; 

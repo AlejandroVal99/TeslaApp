@@ -12,13 +12,14 @@ public class User {
 	private String state;
 	private boolean active;
 	
+	private Automobile comAutomovil;
 	private Automobile automovil;
 	
 	private TarjetaCredito tarjetaCredito;
 	private ArrayList<Historico> historicos;
 	
 	public User(String username, String password, String email) {
-		
+		 
 		this.username = username;
 		this.email = email;
 		this.password = password;

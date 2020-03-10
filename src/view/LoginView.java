@@ -13,7 +13,7 @@ public class LoginView {
 	private String username, password;
 	private PApplet app;
 	private PImage bLoginView;
-	private int screen = 2;
+	private int screen = 2; 
 	private ControlP5 cp5;
 	private String[] inputs;
 	private PFont ralewayM;

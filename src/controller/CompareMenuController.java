@@ -16,4 +16,12 @@ public class CompareMenuController {
 		// TODO Auto-generated constructor stub
 	}
 
+
+	public void pintarModelo(int posX, int posY) {
+		
+		teslaapp.mostrarModelo(posX, posY);
+		// TODO Auto-generated method stub
+		
+	}
+
 }

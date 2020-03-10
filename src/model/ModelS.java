@@ -13,8 +13,8 @@ public class ModelS extends Automobile {
 		super(modelo, precio, velMax, timeAceleracion, nivelConsumo, app);
 
 		selectModel = app.loadImage("../Imagenes/SelectionModel/ModelSSelect.png");
-		modelPic= app.loadImage("../Imagenes/SelectionModel/ModelXSelect.png");
-
+		modelPic= app.loadImage("../Imagenes/Modelos/ModelS.png");
+ 
 		/*animacion = new PImage[26];
 
 		for (int i = 0; i < 26; i++) {

@@ -22,9 +22,9 @@ public class SelectModelView {
 	public void drawScreen() {
 
 		app.image(bSelectModel, 0, 0);
-
+ 
 		switch (model) {
-
+ 
 		case 1:
 
 			selectModelController.pintarModel3();
@@ -61,6 +61,7 @@ public class SelectModelView {
 			//ir a pantalla de detalles 
 			else if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 744 && app.mouseY < 775) {
 				screen = 5;
+				selectModelController.escogiModel3();
 			}
  
 			break;
@@ -81,6 +82,7 @@ public class SelectModelView {
 			//ir a pantalla de detalles 
 			else if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 744 && app.mouseY < 775) {
 				screen = 5;
+				selectModelController.escogiModelX();
 			}
 
 			break;
@@ -95,6 +97,7 @@ public class SelectModelView {
 				selectModelController.escogiModelS();
 			}else if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 744 && app.mouseY < 775) {
 				screen = 5;
+				selectModelController.escogiModelS();
 			}
 
 			break;

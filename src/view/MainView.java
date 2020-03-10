@@ -71,12 +71,14 @@ public class MainView extends PApplet {
 		case 5:// Info Model Screen
 			
 			infoModelView.drawScreen();
+			infoModelView.drawModelo(0, 524);
 			
 			break;
 		case 6:// Compare menu screen
 			
 			compareMenuView.drawScreen();
-
+			compareMenuView.drawModelo(0,186);
+ 
 			break;
 		case 7:// Compare Screen
 			compareView.drawScreen();
@@ -143,11 +145,13 @@ public class MainView extends PApplet {
 			break;
 			
 		case 5:// Info Model Screen
-
+			infoModelView.cambioScreen();
+			setScreen(infoModelView.getScreen());
 			
 			break;
 			
 		case 6:// Compare menu screen
+			
 
 			
 			break;

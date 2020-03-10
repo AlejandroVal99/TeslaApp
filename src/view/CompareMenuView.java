@@ -10,6 +10,7 @@ public class CompareMenuView {
 	
 	private PApplet app;
 	private PImage bCompareMenu;
+	private int screen = 6;
 	
 	
 	public CompareMenuView(PApplet app) {
@@ -24,6 +25,17 @@ public class CompareMenuView {
 	public void drawScreen() {
 		app.image(bCompareMenu, 0, 0);
 		// TODO Auto-generated method stub
+		
+	}
+	
+	public void cambioScreen() {
+		
+	}
+
+
+	public void drawModelo(int posX, int posY) {
+		// TODO Auto-generated method stub
+		compareMenuController.pintarModelo(posX,posY);
 		
 	}
 	
