@@ -16,7 +16,7 @@ public class TeslaApp {
 
 		users = new ArrayList<User>();
 		this.app = app;
-		modelosTesla = new Automobile[3];
+		modelosTesla = new Automobile[3]; 
 		modelosCompare = new Automobile[3];
 
 		// Arreglo de vehiculos tesla

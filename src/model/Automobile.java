@@ -30,7 +30,7 @@ public abstract class Automobile {
 		this.contador = 0; 
 		animacion = new PImage[26];
 		raleway = app.createFont("Tipografia/Raleway-Medium.ttf", 70);
-		
+		contador = 0;
 	}
 	public void drawModel() {
 		
@@ -54,8 +54,11 @@ public abstract class Automobile {
 	}
 	
 	public void animacionModelo(int posy) {
+		
 		app.image(animacion[contador],0,posy);
+		
 		if(contador < animacion.length) {
+			
 		if(app.frameCount % 2 == 0) {
 			contador++;
 		}

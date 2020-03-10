@@ -189,7 +189,7 @@ public class MainView extends PApplet {
 			setScreen(paymentView.getScreen());
 			break;
 			
-		case 11:// Thaks Screen
+		case 11:// Thanks Screen
 			thanksView.cambioScreen();
 			setScreen(thanksView.getScreen());
 			historyOrderView.cambioScreen();

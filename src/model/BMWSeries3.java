@@ -1,6 +1,7 @@
 package model;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 
 public class BMWSeries3 extends Automobile {
 
@@ -8,20 +9,14 @@ public class BMWSeries3 extends Automobile {
 		super(modelo, precio, velMax, timeAceleracion, nivelConsumo, app);
 		// TODO Auto-generated constructor stub
 
-		/*
-		 * animacion = new PImage[26];
-		 * 
-		 * 
-		 * for(int i = 0; i < 26; i++) { if(i<10) {
-		 * 
-		 * animacion[i] = app.loadImage("../Animaciones/AniBMWs3/BMWs3_0000"+i+".png");
-		 * 
-		 * }if (i>9) {
-		 * 
-		 * animacion[i] = app.loadImage("../Animaciones/AniBMWs3/BMWs3_000"+i+".png");
-		 * 
-		 * } }
-		 */
+		  
+		  
+		  for(int i = 0; i < animacion.length; i++) {
+			  
+			
+		  animacion[i] = app.loadImage("../Animaciones/AniBMWs3/BMWs3_000"+i+".png");
+		  
+		   }
+		 
 	}
-
 }

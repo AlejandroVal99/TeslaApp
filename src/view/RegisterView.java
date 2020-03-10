@@ -56,7 +56,7 @@ public class RegisterView {
 				.setColorBackground(app.color(0, 0, 0, 1)).setColorForeground(app.color(0, 0, 0, 1)).setFont(ralewayM)
 				.getCaptionLabel().hide();
 		// }
-
+ 
 	}
 
 	public void drawScreen() {

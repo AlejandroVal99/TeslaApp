@@ -14,21 +14,14 @@ public class ModelX extends Automobile {
 		selectModel = app.loadImage("../Imagenes/SelectionModel/ModelXSelect.png");
 		modelPic = app.loadImage("../Imagenes/Modelos/ModelX.png");
 
-		/*
-		 * animacion = new PImage[26];
-		 * 
-		 * 
-		 * for(int i = 0; i < 26; i++) { if(i<10) {
-		 * 
-		 * animacion[i] =
-		 * app.loadImage("../Animaciones/AniModelX/TeslaX_0000"+i+".png");
-		 * 
-		 * }if (i>9) {
-		 * 
-		 * animacion[i] = app.loadImage("../Animaciones/AniModelX/TeslaX_000"+i+".png");
-		 * 
-		 * } }
-		 */
+		
+
+		for (int i = 0; i < animacion.length; i++) {
+			
+				animacion[i] = app.loadImage("../Animaciones/AniModelX/TeslaX_000" + i + ".png");
+
+			System.out.println(i);
+		}
 	}
 
 	public void drawModel() {

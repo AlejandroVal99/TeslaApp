@@ -24,7 +24,7 @@ public class CompareView {
 		compareController = new CompareController(app);
 		this.app = app;
 		// TODO Auto-generated constructor stub
-	}
+	} 
 
 	public void drawScreen() {
 		

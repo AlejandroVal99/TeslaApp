@@ -9,21 +9,11 @@ public class PeugeotE208 extends Automobile {
 		super(modelo, precio, velMax, timeAceleracion, nivelConsumo, app);
 		// TODO Auto-generated constructor stub
 
-		/*
-		 * animacion = new PImage[26];
-		 * 
-		 * 
-		 * for(int i = 0; i < 26; i++) { if(i<10) {
-		 * 
-		 * animacion[i] =
-		 * app.loadImage("../Animaciones/AniPeugeot/peugeot_0000"+i+".png");
-		 * 
-		 * }if (i>9) {
-		 * 
-		 * animacion[i] = app.loadImage("../Animaciones/AniPeugeot/peugeot_000"+i+".png");
-		 * 
-		 * } }
-		 */
+		for (int i = 0; i < 26; i++) {
+
+			animacion[i] = app.loadImage("../Animaciones/AniPeugeot/peugeot_000" + i + ".png");
+
+		}
 	}
 
 }
