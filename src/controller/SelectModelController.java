@@ -15,7 +15,16 @@ public class SelectModelController {
 		teslaapp = new TeslaApp(app);
 		// TODO Auto-generated constructor stub
 	}
-
+	public void escogiModel3() {
+		teslaapp.comprarModel3();
+	}
+	public void escogiModelX() {
+		teslaapp.comprarModelX();
+	}
+	
+	public void escogiModelS() {
+		teslaapp.comprarModelS();
+	}
 
 	public void pintarModelX() {
 		

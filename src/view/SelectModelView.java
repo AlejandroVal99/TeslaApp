@@ -46,42 +46,55 @@ public class SelectModelView {
 
 		switch (model) {
 
-		case 1:
+		case 1://model 3
 			if (app.mouseX > 350 && app.mouseX < 381 && app.mouseY > 159 && app.mouseY < 188) {
 				model = 2;
 
 			}
 			//asignar auto
-			if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
+			else if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
 				
 				screen = 10;
-
+				selectModelController.escogiModel3();
+				
+			}
+			//ir a pantalla de detalles 
+			else if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 744 && app.mouseY < 775) {
+				screen = 5;
 			}
  
 			break;
 
-		case 2:
+		case 2://model X
 
 			if (app.mouseX > 350 && app.mouseX < 381 && app.mouseY > 159 && app.mouseY < 188) {
 				model = 3;
 			}
-			if (app.mouseX > 34 && app.mouseX < 60 && app.mouseY > 159 && app.mouseY < 189) {
+			else if (app.mouseX > 34 && app.mouseX < 60 && app.mouseY > 159 && app.mouseY < 189) {
 				model = 1;
 			}
 			//asignar auto
-			if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
+			else if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
 				screen = 10;
+				selectModelController.escogiModelX();
+			}
+			//ir a pantalla de detalles 
+			else if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 744 && app.mouseY < 775) {
+				screen = 5;
 			}
 
 			break;
-		case 3:
+		case 3://model S
 
 			if (app.mouseX > 34 && app.mouseX < 60 && app.mouseY > 159 && app.mouseY < 189) {
 				model = 2;
 			}
 			//asignar auto
-			if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
+			else if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
 				screen = 10;
+				selectModelController.escogiModelS();
+			}else if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 744 && app.mouseY < 775) {
+				screen = 5;
 			}
 
 			break;

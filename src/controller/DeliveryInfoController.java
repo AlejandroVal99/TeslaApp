@@ -17,6 +17,10 @@ public class DeliveryInfoController {
 	public void getInfoDeliveryCon(String country, String state, String address) {
 		teslaapp.deliveryInformation(country, state, address);
 
+	} 
+	
+	public void crearHistorico() {
+		teslaapp.crearCompra();
 	}
 
 }

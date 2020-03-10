@@ -20,9 +20,12 @@ public class TeslaApp {
 		modelosCompare = new Automobile[3];
 
 		// Arreglo de vehiculos tesla
-
+		
+		//modelo 3
 		modelosTesla[0] = new Model3("MODEL 3", 52690, 145, 3.2, "low", app);
+		//modelo s
 		modelosTesla[1] = new ModelS("MODEL S", 99690, 163, 2.7, "low", app);
+		//modelo x
 		modelosTesla[2] = new ModelX("MODEL X", 94490, 163, 2.4, "low", app);
 
 		// Arreglo de vehiculos a Comparar

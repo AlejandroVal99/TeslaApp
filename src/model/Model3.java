@@ -15,7 +15,7 @@ public class Model3 extends Automobile {
 		modelPic= app.loadImage("../Imagenes/SelectionModel/Model3Select.png");
 		
 		/*
-		  animacion = new PImage[26];
+		  animacion = new PImage[26]; 
 		  
 		  
 		  for(int i = 0; i < 26; i++) { if(i<10) {

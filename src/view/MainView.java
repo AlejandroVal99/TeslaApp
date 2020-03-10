@@ -24,7 +24,7 @@ public class MainView extends PApplet {
  
 	public void settings() {
 		size(414, 896);
-	}
+	} 
 
 	public void setup() {
 		
