@@ -15,4 +15,16 @@ public class LoginController {
 		// TODO Auto-generated constructor stub
 	}
 
+
+	public boolean logInVerifi(String username, String password) {
+		System.out.println("funciono");
+		
+		if(teslaapp.logInVerification(username, password)) {
+			return true;
+		}
+		
+		return false;
+		
+	}
+
 }

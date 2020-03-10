@@ -14,4 +14,9 @@ public class PaymentController {
 		// TODO Auto-generated constructor stub
 	}
 
+	public void nuevaTrajeta(String franquicia, String pam, String cvc, String fecha) {
+		// TODO Auto-generated method stub
+		teslaapp.tarjetaPago(franquicia, pam, cvc, fecha);
+	}
+
 }

@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 public class MainView extends PApplet {
 
-	private int screen = 3;
+	private int screen = 10;
 	private SplashScreenView splashScreenView;
 	private LoginView loginView;
 	private RegisterView registerView;
@@ -100,10 +100,10 @@ public class MainView extends PApplet {
 			break;
 
 		}
-
+		verInputs();
 	}
 
-	public void mousePressed() {
+	public void mouseClicked() {
 		
 		System.out.println("x "+mouseX +"y "+mouseY);
 
@@ -113,9 +113,21 @@ public class MainView extends PApplet {
 
 			break;
 		case 2:// Log in screen
+			
+			loginView.loginVerification();
+			loginView.cambioScreen();
+			setScreen(loginView.getScreen());
 
 			break;
 		case 3:// sign in o register screen
+			
+			registerView.getInfoForm();
+			
+			setScreen(registerView.getScreen());
+			//System.out.println(screen);
+			//if (mouseX > 148 && mouseX < 266 && mouseY > 640 && mouseY < 668) {
+				//screen = 2;
+				//}
 
 			break;
 		case 4:// Select Model screen
@@ -136,14 +148,28 @@ public class MainView extends PApplet {
 		case 9:// historico Screen
 
 			break;
-		case 10:// Thanks Screen
-
+		case 10:// Payment Screen
+			paymentView.nuevaCreditCard();
+			setScreen(paymentView.getScreen());
 			break;
-		case 11:// Payment Screen
+		case 11:// Thaks Screen
 
 			break;
 
 		}
+	}
+	public void verInputs() {
+		registerView.mostrarInputs(screen);
+		loginView.mostrarInputs(screen);
+		paymentView.mostrarInputs(screen);
+	}
+
+	public int getScreen() {
+		return screen;
+	}
+
+	public void setScreen(int screen) {
+		this.screen = screen;
 	}
 
 }

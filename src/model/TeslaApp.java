@@ -7,25 +7,36 @@ import processing.core.PApplet;
 public class TeslaApp {
 
 	private PApplet app;
-	private ArrayList<User> users;
+	private static ArrayList<User> users;
 	private Automobile[] modelosTesla;
 	private Automobile[] modelosCompare;
+	private int posUserActive;
 
 	public TeslaApp(PApplet app) {
 
+		users = new ArrayList<User>();
 		this.app = app;
 
 	}
 
 	public void registerUser(String user, String password, String email) {
+
 		users.add(new User(user, password, email));
+
+		for (User userModel : users) {
+			System.out.println(userModel.getUsername());
+			System.out.println(userModel.getPassword());
+			System.out.println(userModel.getEmail());
+			System.out.println("====================");
+		}
+
 	}
 
 	public boolean logInVerification(String username, String password) {
 
 		for (int i = 0; i < users.size(); i++) {
 			if (users.get(i).getUsername().equals(username) && (users.get(i).getPassword().equals(password))) {
-
+				posUserActive = i;
 				users.get(i).setActive(true);
 
 				return true;
@@ -34,18 +45,15 @@ public class TeslaApp {
 		return false;
 	}
 
-	public void tarjetaPago(String franquicia, int pam, int cvc, int fecha) {
+	public void tarjetaPago(String franquicia, String pam, String cvc, String fecha) {
 
-		for (int i = 0; i < users.size(); i++) {
-			if (users.get(i).isActive()) {
+		//if (users.get(posUserActive).isActive()) {
+		System.out.println("tengo tarjeta");
+			users.get(posUserActive).nuevaTarjeta(franquicia, pam, cvc, fecha);
 
-				users.get(i).nuevaTarjeta(franquicia, pam, cvc, fecha);
-
-			}
-		}
-	}
-
-	public void comparaAuto(Automobile tesla, Automobile otro) {
+		//}
 
 	}
+
+	
 }

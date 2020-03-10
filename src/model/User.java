@@ -32,7 +32,7 @@ public class User {
 		this.state = state;
 	}
 	
-	public void nuevaTarjeta (String franquicia, int pam, int cvc, int fecha) {
+	public void nuevaTarjeta (String franquicia, String pam, String cvc, String fecha) {
 		tarjetaCredito = new TarjetaCredito(franquicia, pam, cvc, fecha);
 	}
 	
@@ -123,8 +123,6 @@ public class User {
 	}
 
 	
-	
-
 	
 
 }
