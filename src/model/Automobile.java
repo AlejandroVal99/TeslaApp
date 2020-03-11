@@ -15,7 +15,7 @@ public abstract class Automobile {
 	protected PImage selectModel;
 	protected PApplet app;
 	protected PImage[] animacion;
-	protected int contador = 0;
+	protected int contador;
 	protected PFont raleway;
 	
 	
@@ -27,18 +27,19 @@ public abstract class Automobile {
 		this.timeAceleracion = timeAceleracion;
 		this.nivelConsumo = nivelConsumo;
 		this.app = app;
-		this.contador = 0; 
+		//this.contador = 0; 
 		animacion = new PImage[26];
 		raleway = app.createFont("Tipografia/Raleway-Medium.ttf", 70);
 		contador = 0;
 	}
+	public void cargarImagenes() {
+		
+	}
 	public void drawModel() {
 		
 	}
-
+ 
 	public void vistaModelo(int posX, int posY) {
-		
-		
 		
 	}
 	
@@ -55,11 +56,15 @@ public abstract class Automobile {
 	
 	public void animacionModelo(int posy) {
 		
-		app.image(animacion[contador],0,posy);
 		
-		if(contador < animacion.length) {
+		
+		app.image(animacion[contador],0,posy);
 			
 		if(app.frameCount % 2 == 0) {
+		if (contador == 25) {
+			contador = 25;
+		}else {
+			
 			contador++;
 		}
 		}

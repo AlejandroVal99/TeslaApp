@@ -12,6 +12,7 @@ public class CompareMenuController {
 
 		this.app = app;
 		teslaapp = new TeslaApp(app);
+		teslaapp.cargadoImagenes();
 		// TODO Auto-generated constructor stub
 	}
 

@@ -13,18 +13,18 @@ public class ModelX extends Automobile {
 
 		selectModel = app.loadImage("../Imagenes/SelectionModel/ModelXSelect.png");
 		modelPic = app.loadImage("../Imagenes/Modelos/ModelX.png");
-
+		//cargarImagenes();
 		
 
 		
 	}
 	public void cargarImagenes() {
 		
-		for (int i = 0; i < animacion.length; i++) {
+		for (int i = 0; i < 26; i++) {
 			
 			animacion[i] = app.loadImage("../Animaciones/AniModelX/TeslaX_000" + i + ".png");
 
-		System.out.println(i); 
+		System.out.println("cargo"); 
 	}
 	}
 	public void drawModel() {

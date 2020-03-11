@@ -12,15 +12,19 @@ public class AudiEtron55 extends Automobile{
 		// TODO Auto-generated constructor stub
 		
 		
+		//cargarImagenes();
+		 
+		 
+		 
+	}
+	public void cargarImagenes() {
 		
-		 
-		 
-		// for(int i = 0; i < animacion.length; i++) { 
-		 
-		  //animacion[i] = app.loadImage("../Animaciones/AniAudiEtro/Audi_000"+i+".png");
-		  
-		//}
-		 
+		 for(int i = 0; i < animacion.length; i++) { 
+		
+		animacion[i] = app.loadImage("../Animaciones/AniAudiEtro/Audi_000"+i+".png");
+		
+		}
+		
 	}
 
 }

@@ -82,6 +82,10 @@ public class MainView extends PApplet {
 			break;
 		case 7:// Compare Screen
 			compareView.drawScreen();
+			
+			//Problema para recorrer este arreglo, solo con los modelos de tesla, o cuando los ejecuto a los dos a la vez
+			//compareView.animacionTesla(82);
+			compareView.drawModelo(0,186);
 			compareView.animacionCompare(480);
 			
 			break;

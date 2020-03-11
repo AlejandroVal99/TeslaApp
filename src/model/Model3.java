@@ -14,23 +14,20 @@ public class Model3 extends Automobile {
 		selectModel = app.loadImage("../Imagenes/SelectionModel/Model3Select.png");
 		modelPic = app.loadImage("../Imagenes/Modelos/Model3.png");
 
-		animacion = new PImage[26];
+		//cargarImagenes();
 
-		/*for (int i = 0; i < 26; i++) {
-			if (i < 10) {
-
-				animacion[i] = app.loadImage("../Animaciones/AniModel3/Tesla3_0000" + i + ".png");
-
-			}
-			if (i > 9) {
-
-				animacion[i] = app.loadImage("../Animaciones/AniModel3/Tesla3_000" + i + ".png");
-
-			}
-		}*/
 
 	}
-
+	
+	
+	public void cargarImagenes() {
+		for (int i = 0; i < animacion.length; i++) {
+			
+			animacion[i] = app.loadImage("../Animaciones/AniModel3/Tesla3_000" + i + ".png");
+			System.out.println("cargo");
+		}
+	}
+	
 	public void drawModel() {
 		app.image(selectModel, 0, 0);
 	}

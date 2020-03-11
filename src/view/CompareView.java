@@ -49,4 +49,11 @@ public class CompareView {
 		}
 	}
 
+	public void drawModelo(int posX, int posY) {
+		
+		compareController.pintarModel(posX,posY);
+		// TODO Auto-generated method stub
+		
+	}
+
 }

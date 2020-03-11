@@ -17,7 +17,7 @@ public class TeslaApp {
 		users = new ArrayList<User>();
 		this.app = app;
 		modelosTesla = new Automobile[3]; 
-		modelosCompare = new Automobile[3];
+		modelosCompare = new Automobile[3]; 
 
 		// Arreglo de vehiculos tesla
 
@@ -167,7 +167,7 @@ public class TeslaApp {
 	public void animacionTeslaCar(int posY) {
 		
 		if (users.get(posUserActive).isActive()) {
-			users.get(posUserActive).getAutomovil().animacionModelo(posY);;
+			users.get(posUserActive).getAutomovil().animacionModelo(posY);
 		}
 		
 	}
@@ -177,6 +177,17 @@ public class TeslaApp {
 		if (users.get(posUserActive).isActive()) {
 			users.get(posUserActive).getComAutomovil().animacionModelo(posY);;
 		}
+		
+	}
+	public void cargadoImagenes() {
+		modelosTesla[0].cargarImagenes();
+		modelosTesla[1].cargarImagenes();
+		modelosTesla[2].cargarImagenes();
+		
+		modelosCompare[0].cargarImagenes();
+		modelosCompare[1].cargarImagenes();
+		modelosCompare[2].cargarImagenes();
+
 		
 	}
 

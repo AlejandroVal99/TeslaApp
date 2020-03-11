@@ -29,6 +29,12 @@ public class CompareController {
 		// TODO Auto-generated method stub
 		
 	}
+
+
+	public void pintarModel(int posX, int posY) {
+		teslaapp.mostrarModelo(posX, posY);
+		
+	}
 	
 	
 	
