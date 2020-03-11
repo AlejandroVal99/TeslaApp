@@ -16,14 +16,17 @@ public class ModelX extends Automobile {
 
 		
 
+		
+	}
+	public void cargarImagenes() {
+		
 		for (int i = 0; i < animacion.length; i++) {
 			
-				animacion[i] = app.loadImage("../Animaciones/AniModelX/TeslaX_000" + i + ".png");
+			animacion[i] = app.loadImage("../Animaciones/AniModelX/TeslaX_000" + i + ".png");
 
-			System.out.println(i);
-		}
+		System.out.println(i); 
 	}
-
+	}
 	public void drawModel() {
 		app.image(selectModel, 0, 0);
 	}
