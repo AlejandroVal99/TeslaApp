@@ -22,6 +22,7 @@ public class SelectModelView {
 	public void drawScreen() {
 
 		app.image(bSelectModel, 0, 0);
+		
  
 		switch (model) {
  

@@ -16,4 +16,11 @@ public class HistoryOrderController {
 		// TODO Auto-generated constructor stub
 	}
 
+
+	public void pintarHistorico() {
+		// TODO Auto-generated method stub
+		teslaapp.pintarHistorico();
+		
+	}
+
 }

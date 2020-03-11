@@ -191,4 +191,15 @@ public class TeslaApp {
 		
 	}
 
+	public void pintarHistorico() {
+		// TODO Auto-generated method stub
+		if (users.get(posUserActive).isActive()) {
+			for(int i = 0; i < users.get(posUserActive).getHistoricos().size();i++) {
+				users.get(posUserActive).getHistoricos().get(i).getVehiculo().vistaModelo(100, 50+(i*70));
+				app.text(users.get(posUserActive).getHistoricos().get(i).getDirection(), 100, 65+(i*70));
+			}
+			
+		}
+	}
+
 }

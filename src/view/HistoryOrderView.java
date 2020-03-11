@@ -44,4 +44,9 @@ public class HistoryOrderView {
 		}
 		
 	}
+	public void pintarHistoricos(){
+		
+		historyController.pintarHistorico();
+		
+	}
 }
