@@ -46,5 +46,9 @@ public class SelectModelController {
 		// TODO Auto-generated method stub
 		
 	}
+	public String pintarUser() {
+		// TODO Auto-generated method stub
+		return teslaapp.nombreUser();
+	}
 
 }

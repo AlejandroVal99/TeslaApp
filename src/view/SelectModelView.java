@@ -22,12 +22,15 @@ public class SelectModelView {
 	public void drawScreen() {
 
 		app.image(bSelectModel, 0, 0);
+		app.fill(255);
+		app.text(selectModelController.pintarUser(), 300, 48);
 		
  
 		switch (model) {
  
 		case 1:
  
+			
 			selectModelController.pintarModel3();
 			break;
 
@@ -44,6 +47,10 @@ public class SelectModelView {
 	}
 
 	public void escogerCarro() {
+		if (app.mouseX > 35 && app.mouseX < 126 && app.mouseY > 49 && app.mouseY < 61) {
+			screen = 9;
+
+		}
 
 		switch (model) {
 

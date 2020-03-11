@@ -202,4 +202,13 @@ public class TeslaApp {
 		}
 	}
 
+	public String nombreUser() {
+		if (users.get(posUserActive).isActive()) {
+		// TODO Auto-generated method stub
+		return users.get(posUserActive).getUsername();
+	}else {
+		return "User";
+	}
+	}
+
 }

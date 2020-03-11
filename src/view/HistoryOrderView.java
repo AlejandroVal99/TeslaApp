@@ -31,12 +31,14 @@ public class HistoryOrderView {
 	public void drawScreen() {
 		// TODO Auto-generated method stub
 		app.image(bHistoryOrder, 0, 0);
+		
 	}
 	
 	public void cambioScreen() {
 		
 		if (app.mouseX > 61 && app.mouseX < 353 && app.mouseY > 797 && app.mouseY < 828) {
 			screen = 4; //pantalla principal
+			
 		}else if (app.mouseX > 170 && app.mouseX < 247 && app.mouseY > 846 && app.mouseY < 863) {
 			
 			screen = 2;//pantalla de login
